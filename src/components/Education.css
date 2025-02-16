@@ -1,0 +1,118 @@
+/* General Styles */
+.education-section {
+  background: linear-gradient(135deg, #d3d3d3, #ffffff); /* Gray gradient */
+  padding: 60px 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Title */
+.education-title {
+  font-family: 'Dancing Script', cursive;
+
+  
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #800000; /* Maroon */
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+/* Container Layout */
+.education-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+/* Sidebar */
+.education-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Sidebar Buttons */
+.sidebar-button {
+  background: #800000; /* Maroon */
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+}
+
+.sidebar-button.active {
+  background: #4a0000; /* Darker Maroon */
+}
+
+.sidebar-button:hover {
+  background: #4a0000;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Content Box */
+.education-content {
+  flex: 1;
+  max-width: 600px;
+  background: white;
+  border: 2px solid #800000; /* Maroon */
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Content Styles */
+.content-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.8rem;
+  color: #800000;
+  margin-bottom: 10px;
+}
+
+.content-location {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.content-subject {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #4a4a4a;
+  margin-bottom: 10px;
+}
+
+.content-description {
+  font-size: 1rem;
+  color: #4a4a4a;
+  line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .education-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .education-sidebar {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+}

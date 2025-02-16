@@ -1,0 +1,101 @@
+/* General Section Styling */
+.xyz-section {
+  padding: 20px;
+  background-color: #f0f0f0; /* Light Gray Background */
+}
+
+.toggle-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.toggle-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: 2px solid #800000; /* Maroon */
+  background-color: #fff;
+  color: #800000;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+}
+
+.toggle-button.active {
+  background-color: #800000; /* Maroon */
+  color: #fff;
+}
+
+.toggle-button:hover {
+  background-color: #333; /* Dark Gray */
+  color: #fff;
+}
+
+/* Certifications and Internships */
+.certifications,
+.internships {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.cert-card,
+.intern-card {
+  background-color: #fff;
+  border: 2px solid #800000; /* Maroon */
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  width: 350px; /* Increased width */
+  padding: 25px; /* Increased padding */
+  text-align: center;
+}
+
+.cert-card:hover,
+.intern-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(128, 0, 0, 0.5); /* Stronger Maroon Shadow */
+}
+
+.subcategory-title {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #800000;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between; /* Align text and icon properly */
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.subcategory-title:hover {
+  color: #333; /* Dark Gray */
+}
+
+.toggle-icon {
+  font-size: 1.2rem; /* Adjust icon size */
+  margin-left: 10px;
+  color: #800000; /* Match with text color */
+  transition: transform 0.2s ease;
+}
+
+.subcategory-description {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 5px;
+}
+
+.subcategory-image {
+  width: 100%;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.internships {
+  display: flex;
+  flex-direction: column; /* Change layout to vertical */
+  align-items: center; /* Center align the cards */
+  gap: 20px; /* Space between each card */
+}

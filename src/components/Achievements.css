@@ -1,0 +1,118 @@
+/* General Section Styling */
+.achievements-section {
+    background-color: #f9f9f9; /* Light background color */
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  /* Section Title Styling */
+  .achievements-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: maroon;
+    margin-bottom: 40px;
+    font-family: "Dancing Script", cursive;
+  }
+  
+  /* Container for Achievement Cards */
+  .achievements-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping for responsiveness */
+    gap: 20px;
+    justify-content: center;
+    align-items: stretch;
+  }
+  
+  /* Individual Achievement Card Styling */
+  .achievement-card {
+    background-color: #ffffff; /* White card background */
+    border: 2px solid maroon; /* Maroon border */
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    text-align: left;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Hover Effects for Cards */
+  .achievement-card:hover {
+    transform: translateY(-10px); /* Slight lift on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+  }
+  
+  /* Achievement Icon Styling */
+  .achievement-icon {
+    font-size: 2.5rem;
+    color: maroon; /* Icon color */
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Achievement Title Styling */
+  .achievement-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: maroon; /* Maroon title color */
+    margin-bottom: 10px;
+  }
+  
+  /* Achievement Description Styling */
+  .achievement-description {
+    font-size: 1rem;
+    color: #333333; /* Dark gray for readability */
+    margin-bottom: 15px;
+    line-height: 1.5; /* Better spacing for text */
+  }
+  
+  /* View Demo Button Styling */
+  .view-demo-button {
+    background-color: maroon; /* Maroon background for the button */
+    color: white; /* White text */
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  /* Hover Effects for View Demo Button */
+  .view-demo-button:hover {
+    background-color: #800000; /* Darker maroon on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .achievements-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .achievement-card {
+      width: 90%; /* Adjust card width for smaller screens */
+    }
+  }
+/* View Demo Button Styling */
+.view-demo-button {
+    background-color: maroon; /* Maroon background for the button */
+    color: white; /* White text */
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  /* Hover Effects for View Demo Button */
+  .view-demo-button:hover {
+    background-color: #333333; /* Dark grey on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+  }
+    

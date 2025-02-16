@@ -1,0 +1,122 @@
+/* Define the color palette */
+:root {
+  --maroon: #800000;
+  --light-gray: #D3D3D3;
+  --dark-gray: #333333;
+  --white: #FFFFFF;
+}
+
+/* General Styles */
+body {
+  background-color: var(--light-gray);
+  color: var(--dark-gray);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* About Section */
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  background-color: var(--light-gray);
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* Profile Picture Styling */
+.about-image {
+  flex: 1;
+  margin-right: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.about-image img {
+  width: 70%;
+  height: auto;
+  border-radius: 50%;
+  border: 5px solid var(--maroon);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Text Section */
+.about-text-section {
+  flex: 2;
+  text-align: left;
+  max-width: 700px;
+}
+
+.about-header {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: var(--maroon);
+  margin-bottom: 20px;
+  font-family: 'Georgia', serif;
+  transition: transform 0.3s ease;
+}
+
+.about-header:hover {
+  transform: scale(1.05);
+}
+
+.about-text {
+  font-size: 1.2rem;
+  color: var(--dark-gray);
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+/* Updated View Resume Button */
+.view-resume-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 20px;
+  background-color: var(--maroon);
+  color: var(--white);
+  border-radius: 5px;
+  font-size: 1.2rem;
+  text-decoration: none;
+  margin-top: 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.view-resume-btn:hover {
+  background-color: var(--dark-gray);
+  transform: scale(1.05);
+}
+
+.view-resume-btn svg {
+  margin-right: 8px; /* Space between icon and text */
+}
+
+/* Animations */
+.about-header, .about-text {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

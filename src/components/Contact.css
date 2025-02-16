@@ -1,0 +1,83 @@
+/* General Styles */
+.contact-section {
+  background: linear-gradient(135deg, #d3d3d3, #ffffff); /* Gray gradient */
+  padding: 80px 20px;
+}
+
+.contact-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Section Title */
+.section-title {
+  font-family: 'Dancing Script', cursive;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #800000; /* Maroon */
+  margin-bottom: 40px;
+}
+
+/* Grid Layout */
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  justify-content: center;
+}
+
+/* Contact Card */
+.contact-card {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Icons */
+.contact-icon {
+  font-size: 3rem;
+  color: #800000; /* Maroon */
+  margin-bottom: 15px;
+}
+
+/* Card Title */
+.contact-card h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333333; /* Dark gray */
+  margin-bottom: 10px;
+}
+
+/* Contact Details */
+.contact-card p {
+  font-size: 1rem;
+  color: #4a4a4a; /* Neutral gray */
+}
+
+.contact-card a {
+  text-decoration: none;
+  color: #800000; /* Maroon links */
+  font-weight: bold;
+}
+
+.contact-card a:hover {
+  text-decoration: underline;
+  color: #4a0000; /* Darker maroon for hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}

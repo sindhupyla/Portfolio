@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+.projects-section {
+  padding: 50px 20px;
+  background-color: #f5f5f5; /* Light gray background */
+  color: #4d4d4d; /* Neutral dark text */
+  min-height: 100vh;
+  text-align: center;
+}
+
+.projects-title {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #800000; /* Maroon title */
+  text-shadow: 1px 1px 3px rgba(128, 0, 0, 0.4);
+  font-family: 'Dancing Script', cursive;
+}
+
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Reduced gap */
+  align-items: center;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: row;
+  gap: 15px; /* Reduced gap */
+  background-color: #ffffff; /* White card background */
+  padding: 10px; /* Reduced padding */
+  border-radius: 10px; /* Reduced border radius */
+  box-shadow: 0 3px 10px rgba(128, 0, 0, 0.2); /* Softer shadow */
+  width: 75%; /* Reduced width */
+  max-width: 700px; /* Reduced max-width */
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px); /* Reduced hover translation */
+  box-shadow: 0 8px 15px rgba(128, 0, 0, 0.4); /* Softer shadow */
+}
+
+.project-left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-image {
+  width: 80%; /* Reduced width */
+  max-width: 200px; /* Reduced max-width */
+  border-radius: 8px; /* Slightly reduced border radius */
+  box-shadow: 0 3px 8px rgba(128, 0, 0, 0.3); /* Softer shadow */
+}
+
+.project-right {
+  flex: 2;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 8px; /* Reduced gap */
+}
+
+.project-title {
+  font-size: 1.8rem; /* Slightly smaller title font */
+  color: #000000; /* Changed heading to black */
+}
+
+.project-tech-stack,
+.project-description {
+  font-size: 1rem; /* Reduced font size */
+  color: #4d4d4d; /* Neutral dark text */
+}
+
+.project-description {
+  color: #808080; /* Changed description to gray */
+}
+
+.project-buttons {
+  display: flex;
+  gap: 8px; /* Reduced gap */
+  margin-top: 8px; /* Reduced margin */
+}
+
+.project-button {
+  padding: 8px 15px; /* Reduced padding */
+  border-radius: 5px;
+  font-size: 1rem; /* Reduced font size */
+  font-weight: bold;
+  text-decoration: none;
+  color: #ffffff; /* White text */
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.demo-button {
+  background-color: #800000; /* Maroon button */
+  display: flex;
+  align-items: center;
+}
+
+.github-button {
+  background-color: #cc3d3d; /* Lighter maroon button */
+}
+
+.project-button:hover {
+  transform: scale(1.05);
+  background-color: #4d0000; /* Darker maroon on hover */
+  opacity: 0.9;
+}
+
+/* Modal Styles */
+.video-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8); /* Dark overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.video-modal-content {
+  position: relative;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 90%;
+  max-height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-video {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 2.5rem; /* Enlarged close button */
+  color: #ffffff; /* Changed color to white */
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.close-button:hover {
+  color: #e0e0e0; /* Lighter white on hover */
+}

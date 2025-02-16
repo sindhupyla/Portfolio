@@ -1,0 +1,133 @@
+/* General Page Styles */
+.skills-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f5f5f5;
+  padding: 50px 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Heading */
+.skills-heading {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #800000; /* Maroon */
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* Container for Buttons and Display */
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  max-width: 800px;
+}
+
+/* Buttons Section */
+.skills-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.skills-btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  background-color: #d3d3d3; /* Neutral light gray */
+  color: #333; /* Dark gray text */
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.skills-btn:hover {
+  background-color: #800000;
+  color: white;
+}
+
+.skills-btn.active {
+  background-color: #800000;
+  color: white;
+}
+
+/* Display Box Section */
+.skills-display-box {
+  width: 100%;
+  background-color: white;
+  border: 2px solid #800000; /* Maroon border */
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Grid Layout */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  width: 100%;
+}
+
+.grid-item {
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #d3d3d3; /* Subtle border for items */
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.grid-item:hover {
+  transform: scale(1.05);
+  background-color: #ffe4e1; /* Light pastel for hover */
+}
+
+/* Icons and Labels */
+.skill-icon,
+.profile-icon {
+  font-size: 2rem;
+  color: #800000; /* Maroon */
+  margin-bottom: 10px;
+}
+
+.skill-label,
+.profile-link {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+}
+
+.profile-link:hover {
+  color: #800000;
+}
+
+/* Profile Image Styling */
+.profile-icon {
+  display: flex;
+  justify-content: center; /* Center the image inside the div */
+  align-items: center;
+  margin-bottom: 10px; /* Optional: add some spacing between the image and text */
+}
+
+.profile-image {
+  width: 25px;  /* Reduced size for profile images */
+  height: 25px; /* Reduced size for profile images */
+  object-fit: contain; /* Ensures the image keeps its aspect ratio */
+  border-radius: 50%; /* Optional: makes the image round if it's a square image */
+}
+
+/* Specifically for CodeChef, keeping the image size larger */
+.profile-image-cc {
+  width: 30px;  /* Slightly larger size for CodeChef */
+  height: 30px; /* Slightly larger size for CodeChef */
+}

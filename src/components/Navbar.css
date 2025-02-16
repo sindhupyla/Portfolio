@@ -1,0 +1,109 @@
+/* Navbar Styling */
+.navbar {
+  background-color: #333333; /* Dark Gray background */
+  color: white; /* White text */
+  padding: 1rem 2rem; /* Padding on both sides for better alignment */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+  width: 100%;
+}
+
+/* Navbar Container */
+.navbar-container {
+  max-width: 1200px; /* Increased max width for larger screens */
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-left: 10px; /* Added slight left padding for rightward shift */
+}
+
+/* Navbar Links */
+.nav-links {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 20px; /* Added gap between each item for proper spacing */
+}
+
+/* Navbar List Items */
+.nav-links li {
+  display: flex;
+  align-items: center;
+  position: relative; /* For positioning the divider */
+}
+
+/* Add divider between navbar items */
+.nav-links li::after {
+  content: "";
+  position: absolute;
+  right: -10px;
+  top: 0;
+  height: 60%;
+  border-right: 1px solid #888888; /* Light gray divider */
+}
+
+/* Remove divider from last item */
+.nav-links li:last-child::after {
+  content: none;
+}
+
+/* Navbar Links */
+.nav-links a {
+  color: white; /* White text for good contrast */
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem; /* Slightly reduced font size for better spacing */
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: color 0.3s ease, transform 0.3s ease;
+  padding: 5px 10px; /* Added padding to make the links easier to click */
+}
+
+/* Hover Effects for Links */
+.nav-links a:hover {
+  color: #4CAF50; /* Green hover effect */
+  transform: scale(1.1); /* Slight scale effect */
+}
+
+/* Icons for Navbar */
+.nav-links a svg {
+  font-size: 1.5rem; /* Icon size */
+  transition: transform 0.3s ease;
+}
+
+/* Hover effect for icons */
+.nav-links a:hover svg {
+  transform: scale(1.2); /* Slight scale effect on icon */
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column; /* Stack links vertically on smaller screens */
+    align-items: center;
+    gap: 20px;
+  }
+
+  .navbar-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Remove dividers for mobile view */
+  .nav-links li::after {
+    content: none;
+  }
+
+  /* Make the navbar items take full width on mobile */
+  .nav-links a {
+    width: 100%;
+    text-align: center; /* Center the text and icons for better alignment */
+  }
+}
